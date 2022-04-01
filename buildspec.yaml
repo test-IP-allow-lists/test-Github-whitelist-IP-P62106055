@@ -4,4 +4,4 @@ phases:
   build:
     commands:
       - echo test github cloud
-      - echo test is PR3 after enabling IP allow list with my IP addresses and 0.0.0.0/0
+      - echo test is PR3 after enabling IP allow list with my IP addresses
