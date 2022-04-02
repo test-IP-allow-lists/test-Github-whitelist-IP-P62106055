@@ -4,4 +4,4 @@ phases:
   build:
     commands:
       - echo test github cloud
-      - echo test after creating a new webhook manually in CLI with IP allow list AWS published IP ranges and my IPs
+      - echo test after creating a new webhook manually in CLI with IP allow list AWS published IP ranges and my IPs and Source IP address found in CreateWebhook
