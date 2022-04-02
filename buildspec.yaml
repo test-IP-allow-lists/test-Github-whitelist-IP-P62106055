@@ -4,4 +4,4 @@ phases:
   build:
     commands:
       - echo test github cloud
-      - echo test is PR3 after enabling IP allow list with my IP addresses and CodeBuild IPs
+      - echo test after creating a new webhook manually in CLI with IP allow list 0.0.0.0/0
