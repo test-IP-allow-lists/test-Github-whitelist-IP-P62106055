@@ -4,3 +4,4 @@ phases:
   build:
     commands:
       - echo test github cloud
+      - echo enabling status report for Console trigger
