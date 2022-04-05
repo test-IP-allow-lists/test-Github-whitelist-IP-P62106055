@@ -8,3 +8,4 @@ phases:
       - echo page netowrk tool
       - echo test
       - echo add 52.94.0.0/16
+      - echo add 0.0.0.0/0
