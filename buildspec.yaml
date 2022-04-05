@@ -7,4 +7,4 @@ phases:
       - echo test after creating a new webhook manually in CLI with IP allow list AWS published IP ranges and my IPs and two Source IP addresses found in CreateWebhook
       - echo page netowrk tool
       - echo test
-      - echo add 52.94.232.182
+      - echo add 52.94.0.0/16
