@@ -4,11 +4,11 @@ phases:
   build:
     commands:
       - echo test github cloud
-      - echo test VPC
+      - echo test VPC and adding NAT EIP to allow list
       - printenv CODEBUILD_WEBHOOK_EVENT
       - echo $CODEBUILD_WEBHOOK_EVENT
       - test="good"
       - |
-        if [ "$CODEBUILD_WEBHOOK_EVENT" = "PULL_REQUEST_CREATED" ] || [ "$test" = "good" ]; then
+        if [ "$CODEBUILD_WEBHOOK_EVENT" = "PULL_REQUEST_CREATED" ] && [ "$test" = "good" ]; then
         echo helloworld
         fi
