@@ -4,4 +4,10 @@ phases:
   build:
     commands:
       - echo test github cloud
-      - echo disabling status report for Console trigger
+      - printenv CODEBUILD_WEBHOOK_EVENT
+      - echo $CODEBUILD_WEBHOOK_EVENT
+      - test="good"
+      - |
+        if [ "$CODEBUILD_WEBHOOK_EVENT" = "PULL_REQUEST_CREATED" ] || [ "$test" = "good" ]; then
+        echo helloworld
+        fi
