@@ -9,7 +9,7 @@ phases:
       - echo $CODEBUILD_WEBHOOK_EVENT
       - test="good"
       - |
-        if [ "$CODEBUILD_WEBHOOK_BASE_REF" = "PULL_REQUEST_UPDATED" ] && [ "$test" = "good" ]; then
+        if [ "$CODEBUILD_WEBHOOK_EVENT" = "PULL_REQUEST_UPDATED" ] && [ "$test" = "good" ]; then
           echo helloworld
         else
           echo Something Wrong
