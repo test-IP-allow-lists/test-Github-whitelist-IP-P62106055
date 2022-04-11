@@ -13,7 +13,6 @@ phases:
           echo helloworld
         else
           echo Something Wrong
-#           exit 1
         fi
       - echo after test
       - ls
