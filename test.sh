@@ -1,3 +1,4 @@
+set -e
 echo running script
 test1='1'
 test2='2'
