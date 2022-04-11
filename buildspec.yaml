@@ -7,9 +7,9 @@ phases:
       - echo test VPC and adding NAT EIP to allow list
       - printenv CODEBUILD_WEBHOOK_EVENT
       - echo $CODEBUILD_WEBHOOK_EVENT
-      - t="good"
+      - test="good"
       - |
-        if [ expr "${CODEBUILD_WEBHOOK_BASE_REF}" = "PULL_REQUEST_CREATED" ] && [ "$t" = "good" ]; then
+        if [ "$CODEBUILD_WEBHOOK_BASE_REF" = "PULL_REQUEST_CREATED" ] && [ "$test" = "good" ]; then
           echo helloworld
         else
           echo Something Wrong
