@@ -16,4 +16,4 @@ phases:
         fi
       - echo after test
       - ls
-#       - sh test.sh
+      - sh test.sh
