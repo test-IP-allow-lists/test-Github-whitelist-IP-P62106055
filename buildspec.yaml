@@ -10,7 +10,9 @@ phases:
       - t="good"
       - |
         if [ expr "${CODEBUILD_WEBHOOK_BASE_REF}" = "PULL_REQUEST_CREATED" ] && [ "$t" = "good" ]; then
-        echo helloworld
+          echo helloworld
+        else
+          exit 1
         fi
       - echo after test
       - ls
