@@ -12,3 +12,4 @@ phases:
         if [ expr "${CODEBUILD_WEBHOOK_BASE_REF}" = "PULL_REQUEST_CREATED" ] && [ "$test" = "good" ]; then
         echo helloworld
         fi
+      - echo after test
