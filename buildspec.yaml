@@ -13,3 +13,4 @@ phases:
         echo helloworld
         fi
       - echo after test
+      - sh test.sh
