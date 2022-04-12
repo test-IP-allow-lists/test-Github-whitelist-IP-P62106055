@@ -9,10 +9,11 @@ phases:
       - echo $CODEBUILD_WEBHOOK_EVENT
       - test="good"
       - |
-        if [ "$CODEBUILD_WEBHOOK_EVENT" = "PULL_REQUEST_UPDATED" ] && [ "$test" = "good" ]; then
+        if [ expr "${CODEBUILD_WEBHOOK_EVENT" = "PULL_REQUEST_UPDATED}" ] && [ "$test" = "good" ]; then
           echo helloworld
         else
           echo Something Wrong
+          exit 1
         fi
       - echo after test
       - ls
