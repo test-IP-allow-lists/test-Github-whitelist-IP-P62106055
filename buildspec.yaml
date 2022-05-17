@@ -5,3 +5,4 @@ phases:
     commands:
       - echo test github cloud
       - echo disabling status report for Console trigger
+      - lc
